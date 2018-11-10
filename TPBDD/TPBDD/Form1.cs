@@ -16,5 +16,10 @@ namespace TPBDD
         {
             InitializeComponent();
         }
+
+        private void B_Connect_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

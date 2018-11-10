@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.LBL_Pseudo = new System.Windows.Forms.Label();
-            this.LBL_MotDePasse = new System.Windows.Forms.Label();
-            this.B_Connect = new System.Windows.Forms.Button();
             this.B_inscription = new System.Windows.Forms.Button();
+            this.B_Connect = new System.Windows.Forms.Button();
+            this.LBL_MotDePasse = new System.Windows.Forms.Label();
+            this.LBL_Pseudo = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,28 +53,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // textBox1
+            // B_inscription
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
-            this.textBox1.TabIndex = 0;
+            this.B_inscription.Location = new System.Drawing.Point(9, 119);
+            this.B_inscription.Name = "B_inscription";
+            this.B_inscription.Size = new System.Drawing.Size(287, 41);
+            this.B_inscription.TabIndex = 5;
+            this.B_inscription.Text = "Inscription";
+            this.B_inscription.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // B_Connect
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // LBL_Pseudo
-            // 
-            this.LBL_Pseudo.AutoSize = true;
-            this.LBL_Pseudo.Location = new System.Drawing.Point(6, 23);
-            this.LBL_Pseudo.Name = "LBL_Pseudo";
-            this.LBL_Pseudo.Size = new System.Drawing.Size(43, 13);
-            this.LBL_Pseudo.TabIndex = 2;
-            this.LBL_Pseudo.Text = "Pseudo";
+            this.B_Connect.Location = new System.Drawing.Point(9, 73);
+            this.B_Connect.Name = "B_Connect";
+            this.B_Connect.Size = new System.Drawing.Size(287, 39);
+            this.B_Connect.TabIndex = 4;
+            this.B_Connect.Text = "Connection";
+            this.B_Connect.UseVisualStyleBackColor = true;
+            this.B_Connect.Click += new System.EventHandler(this.B_Connect_Click);
             // 
             // LBL_MotDePasse
             // 
@@ -85,23 +81,28 @@
             this.LBL_MotDePasse.TabIndex = 3;
             this.LBL_MotDePasse.Text = "Mot de Passe";
             // 
-            // B_Connect
+            // LBL_Pseudo
             // 
-            this.B_Connect.Location = new System.Drawing.Point(9, 73);
-            this.B_Connect.Name = "B_Connect";
-            this.B_Connect.Size = new System.Drawing.Size(287, 39);
-            this.B_Connect.TabIndex = 4;
-            this.B_Connect.Text = "Connection";
-            this.B_Connect.UseVisualStyleBackColor = true;
+            this.LBL_Pseudo.AutoSize = true;
+            this.LBL_Pseudo.Location = new System.Drawing.Point(6, 23);
+            this.LBL_Pseudo.Name = "LBL_Pseudo";
+            this.LBL_Pseudo.Size = new System.Drawing.Size(43, 13);
+            this.LBL_Pseudo.TabIndex = 2;
+            this.LBL_Pseudo.Text = "Pseudo";
             // 
-            // B_inscription
+            // textBox2
             // 
-            this.B_inscription.Location = new System.Drawing.Point(9, 119);
-            this.B_inscription.Name = "B_inscription";
-            this.B_inscription.Size = new System.Drawing.Size(287, 41);
-            this.B_inscription.TabIndex = 5;
-            this.B_inscription.Text = "Inscription";
-            this.B_inscription.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(84, 47);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(212, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(84, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(212, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // Form1
             // 
