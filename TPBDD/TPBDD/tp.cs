@@ -1,5 +1,7 @@
 ﻿using System;
-using System.Linq;
+using System.Data.SqlServer;
+using System.Data.SqlServerCD;
+
 namespace TDBDD
 {
     public class TP
