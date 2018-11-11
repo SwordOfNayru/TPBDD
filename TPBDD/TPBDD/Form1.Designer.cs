@@ -1,6 +1,6 @@
 ﻿namespace TPBDD
 {
-    partial class Form1
+    partial class FORM_connect
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -33,8 +33,9 @@
             this.B_Connect = new System.Windows.Forms.Button();
             this.LBL_MotDePasse = new System.Windows.Forms.Label();
             this.LBL_Pseudo = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TXT_MDP = new System.Windows.Forms.TextBox();
+            this.TXT_Pseudo = new System.Windows.Forms.TextBox();
+            this.B_Test = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,14 +45,14 @@
             this.groupBox1.Controls.Add(this.B_Connect);
             this.groupBox1.Controls.Add(this.LBL_MotDePasse);
             this.groupBox1.Controls.Add(this.LBL_Pseudo);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TXT_MDP);
+            this.groupBox1.Controls.Add(this.TXT_Pseudo);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(302, 166);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "connection";
             // 
             // B_inscription
             // 
@@ -90,28 +91,40 @@
             this.LBL_Pseudo.TabIndex = 2;
             this.LBL_Pseudo.Text = "Pseudo";
             // 
-            // textBox2
+            // TXT_MDP
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 20);
-            this.textBox2.TabIndex = 1;
+            this.TXT_MDP.Location = new System.Drawing.Point(84, 47);
+            this.TXT_MDP.Name = "TXT_MDP";
+            this.TXT_MDP.Size = new System.Drawing.Size(212, 20);
+            this.TXT_MDP.TabIndex = 1;
             // 
-            // textBox1
+            // TXT_Pseudo
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
-            this.textBox1.TabIndex = 0;
+            this.TXT_Pseudo.Location = new System.Drawing.Point(84, 20);
+            this.TXT_Pseudo.Name = "TXT_Pseudo";
+            this.TXT_Pseudo.Size = new System.Drawing.Size(212, 20);
+            this.TXT_Pseudo.TabIndex = 0;
             // 
-            // Form1
+            // B_Test
+            // 
+            this.B_Test.BackColor = System.Drawing.Color.LightCoral;
+            this.B_Test.Location = new System.Drawing.Point(12, 185);
+            this.B_Test.Name = "B_Test";
+            this.B_Test.Size = new System.Drawing.Size(302, 64);
+            this.B_Test.TabIndex = 1;
+            this.B_Test.Text = "TEST";
+            this.B_Test.UseVisualStyleBackColor = false;
+            this.B_Test.Click += new System.EventHandler(this.B_Test_Click);
+            // 
+            // FORM_connect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 192);
+            this.ClientSize = new System.Drawing.Size(326, 261);
+            this.Controls.Add(this.B_Test);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FORM_connect";
+            this.Text = "Connection";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -124,9 +137,10 @@
         private System.Windows.Forms.Button B_Connect;
         private System.Windows.Forms.Label LBL_MotDePasse;
         private System.Windows.Forms.Label LBL_Pseudo;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TXT_MDP;
+        private System.Windows.Forms.TextBox TXT_Pseudo;
         private System.Windows.Forms.Button B_inscription;
+        private System.Windows.Forms.Button B_Test;
     }
 }
 
